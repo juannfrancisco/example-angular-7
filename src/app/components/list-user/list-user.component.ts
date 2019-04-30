@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListUserComponent implements OnInit {
 
+  users:any;
+  displayedColumns: string[] = ['name', 'email', 'role'];
+
   constructor( private srvUser:UserService) { }
 
   ngOnInit() {
-    this.srvUser.findAll().subscribe();
+    this.srvUser.findAll().subscribe( data=>{ this.users = data; } );
   }
 
 }

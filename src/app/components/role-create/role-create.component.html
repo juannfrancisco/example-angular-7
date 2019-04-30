@@ -1,0 +1,16 @@
+<p>
+  create-role works!
+</p>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Name" [(ngModel)]="name" name="name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Descripcion"  [(ngModel)]="descripcion" name="descripcion">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="save()">Guardar</button>
+
+</form>

@@ -1,0 +1,26 @@
+<p>
+  create-user works!
+</p>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Name" [(ngModel)]="name" name="name">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" type="email" [(ngModel)]="email" name="email">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" >
+    <input matInput placeholder="password" type="password" [(ngModel)]="password" name="password">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-select placeholder="Select" [(ngModel)]="role" name="role">
+      <mat-option value="1">Administrador</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="saveUser()">Guardar</button>
+
+</form>

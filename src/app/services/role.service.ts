@@ -1,21 +1,20 @@
 import { environment } from './../../environments/environment';
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class RoleService {
 
   constructor(private http: HttpClient) { }
 
-  save(user:any){
-    return this.http.post(environment.endpoint.user, user);
-  }
 
   findAll(){
-    return this.http.get( environment.endpoint.user );
+    return this.http.get(environment.endpoint.role);
+  }
+
+  save(role:any){
+    return this.http.post(environment.endpoint.role, role);
   }
 }

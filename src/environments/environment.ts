@@ -6,7 +6,8 @@ export const environment = {
   production: false,
 
   endpoint:{
-    user: "http://localhost:8081/api/v1/users"
+    user: "http://localhost:8081/api/v1/users",
+    role: "http://localhost:8081/api/v1/roles"
   }
 };
 
